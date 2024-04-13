@@ -13,10 +13,10 @@ public class OnlinePurchaseManager
   {
     /* to be implemented in part (a) */
     int count = 0;
-    for(int i = 0; i < purchases.size(); i++){
-if(isElectronic(purchases.get(i)) == true && getMaker(purchases.get(i)).equals("maker"))
-  count++;
-    }
+   for(Gizmo i : purchases){
+if(i.isElectronic() == true && i.isMaker(maker)
+   count++;
+   }
     return count;
   }
   
