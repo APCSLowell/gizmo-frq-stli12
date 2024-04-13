@@ -14,7 +14,7 @@ public class OnlinePurchaseManager
     /* to be implemented in part (a) */
     int count = 0;
    for(Gizmo i : purchases){
-if(i.isElectronic() == true && i.isMaker(maker)
+if(i.isElectronic() == true && i.isMaker(maker))
    count++;
    }
     return count;
